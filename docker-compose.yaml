@@ -1,6 +1,6 @@
 services:
   portfolio-app:
-    image: ghcr.io/WanderFeliz/portfolio-app:latest
+    image: ghcr.io/wanderfeliz/portfolio-app:latest
     restart: always
     environment:
       - NODE_ENV=production
