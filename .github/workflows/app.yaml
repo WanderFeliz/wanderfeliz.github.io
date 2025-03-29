@@ -45,7 +45,7 @@ jobs:
           exit 0
         else
           echo "Unable to determine package manager"
-          exit 0
+          exit 1
         fi
     - name: Setup Node
       uses: actions/setup-node@v4
