@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    color: #fff;
+    padding: 0.5rem;
+    
+}
+
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 80%;
+    background-color: #1a1a1a;
+}
+
+.row{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    
+}
+
+.col{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 0.5rem;
+}
