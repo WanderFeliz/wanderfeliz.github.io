@@ -28,7 +28,7 @@ const About = () => {
           <h1 className={styles.name}>Wander Paniagua</h1>
           <h3 className={styles.subtitle}>
             Software Engineer
-            <span className={styles.ocupation}>
+            <span className={styles.occupation}>
               <TypeWriter
                 strings={strings}
                 loop={true}

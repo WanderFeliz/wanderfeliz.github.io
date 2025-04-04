@@ -2,7 +2,7 @@ import Card from "@/components/Card";
 
 import styles from "./page.module.scss";
 
-const Porfolio = () => {
+const Portfolio = () => {
   return (
     <>
       <div className={styles.title}>
@@ -27,4 +27,4 @@ const Porfolio = () => {
   );
 };
 
-export default Porfolio;
+export default Portfolio;
