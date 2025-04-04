@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 import Button from "@/components/Button"
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
         <p className={styles.desc}>
           Turning your idea into Reality. Let&apos;s make it happen together.
         </p>
-        <Button url="/portfolio" text="See more"/>
+        <Button url="/about" text="See more" variant="primary"/>
       </div>
       <div className={styles.item}>
         <Image priority src={"/imgs/home.jpg"} alt="" className={styles.img} width={500} height={500} />

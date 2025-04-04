@@ -1,0 +1,97 @@
+.card {
+    // Card styles
+    height: 350px;
+    flex: 0 1 300px; // Flex-grow, flex-shrink, flex-basis
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // Apply hover effects from the parent card element
+    &:hover {
+        .cardWrapper {
+            .cardImageWrapper {
+                // Scale effect on hover
+                transform: scale(1.05);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                
+                .cardImage {
+                    // Blur effect on hover
+                    filter: blur(5px);
+                }
+            }
+            
+            .cardButtons {
+                // Show buttons on hover
+                opacity: 1;
+                transform: translate(-50%, 50%);
+            }
+        }
+    }
+
+    .cardWrapper {
+
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .cardImageWrapper {
+            // This is the figure element that wraps the image
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+
+            // Image styles
+            .cardImage {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: filter 0.3s ease;
+                
+            }
+            
+
+            // Image caption styles
+            .cardCaption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                transition: opacity 0.3s ease;
+
+                p {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;    /* Show only 2 lines */
+                    -webkit-box-orient: vertical;
+                    line-clamp: 2; /* Show only 2 lines */
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                  }
+            }
+        }
+
+        // Card buttons styles where that should appear on hover of the card
+        .cardButtons{
+            position: absolute;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, -10%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease-in-out;
+
+        }
+
+    }
+}

@@ -1,28 +1,27 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./card.module.css";
+import styles from "./card.module.scss";
+import Button from "../Button";
 
 const Card = () => {
   return (
     <div className={styles.card}>
       <div className={styles.cardWrapper}>
-        <div className={styles.cardImage}>
+        <figure className={styles.cardImageWrapper}>
           <Image
             src="/imgs/home.jpg"
             alt="project"
             fill={true}
-            className={styles.image}
+            className={styles.cardImage}
           />
-        </div>
-        <div className={styles.cardBody}>
-          <h2 className={styles.cardTitle}>This is some title</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          </p>
-          <div className={styles.buttonContainer}>
-            <button>Read More</button>
-            <button>See Live Demo</button>
-          </div>
+          <figcaption className={styles.cardCaption}>
+            <h3>Project Title</h3>
+            <p>Project description goes here Lorem ipsum dolor sit dfdfdfgfghfghfhg.</p>
+          </figcaption>
+        </figure>
+        <div className={styles.cardButtons}>
+          <Button url="/portfolio" text="Readme" variant="primary-flex" className={styles.cardButton}/>
+          <Button url="/portfolio" text="Live Demo" className={styles.cardButton}/>
         </div>
       </div>
     </div>

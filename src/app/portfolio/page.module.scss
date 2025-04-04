@@ -1,0 +1,25 @@
+.projectContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 80%;
+
+    .cardContainer{
+        max-height: 740px;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        // Hide scrollbar but still allow scrolling
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+        &::-webkit-scrollbar {
+            padding: 0px;
+            margin: 0px;
+            width: 0px;
+            background: transparent; /* Optional: just to make scrollbar invisible */
+        }
+    }
+}

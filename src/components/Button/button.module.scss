@@ -1,0 +1,70 @@
+@use "../../app/globals.scss" as *;
+@use "sass:color";
+
+.btn {
+  height: 45px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.default {
+  width: max-content;
+  border: 1px solid $actionColor;
+  color: $actionColor;
+
+  &:hover {
+    background-color: color.adjust($actionColor, $lightness: -10%);;
+    color: white;
+  }
+}
+
+// Button styles for the primary and secondary buttons
+// The primary button is the main action button, while the secondary button is a less emphasized action button
+
+.secondary {
+  width: max-content;
+  background-color: transparent;
+  color: $actionColor;
+  border: 1px solid $actionColor;
+
+  &:hover {
+    background-color: color.adjust($actionColor, $lightness: -10%);
+    color: white;
+  }
+}
+
+.secondary-flex {
+  background-color: transparent;
+  color: $actionColor;
+  border: 1px solid $actionColor;
+
+  &:hover {
+    background-color: color.adjust($actionColor, $lightness: -10%);
+    color: white;
+  }
+}
+
+.primary {
+  width: max-content;
+  background-color: $actionColor;
+  color: white;
+
+  &:hover {
+    background-color: color.adjust($actionColor, $lightness: -10%);
+  }
+}
+
+.primary-flex {
+  background-color: $actionColor;
+  color: white;
+
+  &:hover {
+    background-color: color.adjust($actionColor, $lightness: -10%);
+  }
+}

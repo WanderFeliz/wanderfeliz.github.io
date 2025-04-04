@@ -1,0 +1,76 @@
+{
+    "frontend": [
+        {
+            "name": "NextJS Portfolio",
+            "description": "A responsive portfolio website built with Next.js featuring smooth animations and dark mode",
+            "live_demo": "https://next-portfolio-example.vercel.app",
+            "tech_stack": ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
+            "readme": "# NextJS Portfolio\n\nA modern, responsive portfolio site built with Next.js and Tailwind CSS. Features include dark mode, smooth page transitions, and dynamic content loading."
+        },
+        {
+            "name": "E-commerce Dashboard",
+            "description": "Admin dashboard for e-commerce platform with sales analytics and inventory management",
+            "live_demo": "https://ecommerce-dash.example.com",
+            "tech_stack": ["React", "Redux", "Material UI", "Chart.js"],
+            "readme": "# E-commerce Dashboard\n\nA comprehensive admin interface for managing products, orders, and customer data. Includes real-time sales analytics and inventory tracking."
+        },
+        {
+            "name": "Social Media App",
+            "description": "Instagram-inspired social media application with real-time messaging",
+            "live_demo": "https://social-media-demo.example.com",
+            "tech_stack": ["React", "Firebase", "Styled Components", "Redux"],
+            "readme": "# Social Connect\n\nA full-featured social media application with user authentication, post creation, likes, comments, and real-time chat functionality."
+        },
+        {
+            "name": "Weather Forecast SPA",
+            "description": "Single page application that displays weather forecasts based on location",
+            "live_demo": "https://weather-app-demo.example.com",
+            "tech_stack": ["Vue.js", "Vuex", "Axios", "OpenWeatherMap API"],
+            "readme": "# Weather Forecast App\n\nA Vue.js application that provides current weather conditions and 5-day forecasts. Features location detection and search functionality."
+        },
+        {
+            "name": "Task Management System",
+            "description": "Kanban-style task management application with drag-and-drop interface",
+            "live_demo": "https://tasks-manager.example.com",
+            "tech_stack": ["Angular", "TypeScript", "RxJS", "NgRx"],
+            "readme": "# Task Management System\n\nA productivity application for organizing tasks in customizable boards and lists. Supports multiple users and project sharing."
+        }
+    ],
+    "backend": [
+        {
+            "name": "RESTful API Service",
+            "description": "Comprehensive REST API for blog content management with authentication",
+            "live_demo": "https://api-docs.example.com",
+            "tech_stack": ["Node.js", "Express", "MongoDB", "JWT"],
+            "readme": "# Blog CMS API\n\nA secure RESTful API that provides endpoints for creating, reading, updating, and deleting blog posts, with user authentication and authorization."
+        },
+        {
+            "name": "Python FastAPI Backend",
+            "description": "High-performance API built with FastAPI for data processing and analytics",
+            "live_demo": "https://fastapi-demo.example.com/docs",
+            "tech_stack": ["Python", "FastAPI", "SQLAlchemy", "Pydantic"],
+            "readme": "# Analytics API\n\nA modern, fast API built with FastAPI framework, providing endpoints for data processing, analytics, and reporting with automatic Swagger documentation."
+        },
+        {
+            "name": "Microservices Architecture",
+            "description": "Network of microservices for e-commerce platform with API gateway",
+            "live_demo": "https://microservices-demo.example.com",
+            "tech_stack": ["Spring Boot", "Docker", "Kubernetes", "RabbitMQ"],
+            "readme": "# E-commerce Microservices\n\nA collection of interconnected services handling orders, payments, inventory, and user accounts, with service discovery and load balancing."
+        },
+        {
+            "name": "GraphQL Server",
+            "description": "GraphQL server providing flexible data querying for a music streaming service",
+            "live_demo": "https://graphql-music.example.com/playground",
+            "tech_stack": ["Node.js", "Apollo Server", "PostgreSQL", "DataLoader"],
+            "readme": "# Music Streaming GraphQL API\n\nA GraphQL server that allows complex queries for artists, albums, tracks, and playlists with efficient data fetching patterns."
+        },
+        {
+            "name": "Real-time Notification Service",
+            "description": "WebSocket-based service for delivering real-time notifications and updates",
+            "live_demo": "https://notifications-demo.example.com",
+            "tech_stack": ["Go", "WebSockets", "Redis", "gRPC"],
+            "readme": "# Real-time Notification Service\n\nA high-performance service built with Go that handles thousands of concurrent WebSocket connections for delivering instant notifications."
+        }
+    ]
+}

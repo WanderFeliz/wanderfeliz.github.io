@@ -1,0 +1,12 @@
+$mainColor: #111111;
+$actionColor: #194c33;
+$secondaryColor: #bbbbbb;
+$bgWorksIconColor:rgb(232, 238, 246);
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}

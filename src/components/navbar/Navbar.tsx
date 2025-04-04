@@ -2,7 +2,7 @@
 import { NavLinkType } from "@/types/components";
 import Link from "next/link";
 import React from "react";
-import styles from "./navbar.module.css";
+import styles from "./navbar.module.scss";
 
 const links: NavLinkType[] = [
   {
@@ -12,18 +12,18 @@ const links: NavLinkType[] = [
   },
   {
     id: 2,
+    title: "About me",
+    url: "/about",
+  },
+  {
+    id: 3,
     title: "Portfolio",
     url: "/portfolio",
   },
   {
-    id: 3,
+    id: 4,
     title: "Contact",
     url: "/contact",
-  },
-  {
-    id: 3,
-    title: "About me",
-    url: "/about",
   },
 ];
 

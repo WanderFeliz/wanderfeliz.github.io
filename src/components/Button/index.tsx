@@ -1,12 +1,13 @@
 import { ButtonProps } from "@/types/components";
 import Link from "next/link";
 import React from "react";
-import styles from "./button.module.css";
+import styles from "./button.module.scss";
 
-const Button: React.FC<ButtonProps> = ({ text, url }) => {
+const Button: React.FC<ButtonProps> = ({ text, url, className, variant="default" }) => {
+  const buttonClass = `${styles.btn} ${styles[variant]} ${className || ''}`;
   return (
-    <Link href={url}>
-      <button className={styles.button}>{text}</button>
+    <Link href={url} className={buttonClass}>
+      {text}
     </Link>
   );
 };
