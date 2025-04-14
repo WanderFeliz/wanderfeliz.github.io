@@ -1,8 +1,9 @@
 "use client";
-import { NavLinkType } from "@/types/components";
+import { NavLinkType } from "@/typing/components";
 import Link from "next/link";
 import React from "react";
 import styles from "./navbar.module.scss";
+import Image from "next/image";
 
 const links: NavLinkType[] = [
   {
@@ -31,7 +32,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>
-        W.P
+        <Image src={"/imgs/logo.png"} alt="logo" width={64} height={50} className={styles.logoImage} />
       </Link>
       <div className={styles.links}>
         {links.map((link) => {

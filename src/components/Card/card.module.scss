@@ -1,7 +1,7 @@
 .card {
     // Card styles
-    height: 350px;
-    flex: 0 1 300px; // Flex-grow, flex-shrink, flex-basis
+    height: 290px;
+    flex: 0 1 290px; // Flex-grow, flex-shrink, flex-basis
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,7 @@
             .cardButtons {
                 // Show buttons on hover
                 opacity: 1;
-                transform: translate(-50%, 50%);
+                transform: translate(-50%, 30%);
             }
         }
     }
@@ -87,7 +87,7 @@
             transform: translate(-50%, -10%);
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
             opacity: 0;
             transition: opacity 0.3s ease, transform 0.3s ease-in-out;
 

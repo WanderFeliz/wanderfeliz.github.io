@@ -1,0 +1,106 @@
+{
+    "frontend": [
+        {
+            "id": "fe-1",
+            "name": "NextJS Portfolio",
+            "image": "/imgs/home.jpg",
+            "description": "A responsive portfolio website built with Next.js featuring smooth animations and dark mode",
+            "live_demo": "https://wanderfeliz.github.io",
+            "tech_stack": ["React", "Next.js", "Scss", "TypeScript"],
+            "readme": "https://github.com/WanderFeliz/wanderfeliz.github.io/blob/main/README.md",
+            "enabled": true
+        },
+        {
+            "id": "fe-2",
+            "name": "REST Countries API",
+            "description": "Frontend Mentor - REST Countries API with color theme switcher solution.",
+            "image": "https://github.com/WanderFeliz/res-countries-api/blob/main/screenshots/desktop-dark.png?raw=true",
+            "live_demo": "https://wanderfeliz.github.io/res-countries-api",
+            "tech_stack": ["React", "Next.js", "Material UI", "TypeScript", "Sass", "TanStack Query"],
+            "readme": "https://github.com/WanderFeliz/res-countries-api/blob/main/README.md",
+            "enabled": true
+        },
+        {
+            "id": "fe-3",
+            "name": "Gif Expert App",
+            "description": "A React application that fetches and displays GIFs based on user input",
+            "image": "/imgs/home.jpg",
+            "live_demo": "https://gif-expert-wxpc.netlify.app/",
+            "tech_stack": ["React", "API Calls"],
+            "readme": "https://github.com/WanderFeliz/react-gif-expert/blob/main/README.md",
+            "enabled": true
+        },
+        {
+            "id": "fe-4",
+            "name": "Weather Forecast SPA",
+            "description": "Single page application that displays weather forecasts based on location",
+            "image": "/imgs/home.jpg",
+            "live_demo": "#",
+            "tech_stack": ["React", "Vuex", "Axios", "OpenWeatherMap API"],
+            "readme": "# Weather Forecast App\n\nA Vue.js application that provides current weather conditions and 5-day forecasts. Features location detection and search functionality.",
+            "enabled": false
+        },
+        {
+            "id": "fe-5",
+            "name": "Task Management System",
+            "description": "Kanban-style task management application with drag-and-drop interface",
+            "image": "/imgs/home.jpg",
+            "live_demo": "https://tasks-manager.example.com",
+            "tech_stack": ["Angular", "TypeScript", "RxJS", "NgRx"],
+            "readme": "# Task Management System\n\nA productivity application for organizing tasks in customizable boards and lists. Supports multiple users and project sharing.",
+            "enabled": false
+        }
+    ],
+    "backend": [
+        {
+            "id": "be-1",
+            "name": "RESTful API Service",
+            "description": "Comprehensive REST API for blog content management with authentication",
+            "image": "/imgs/home.jpg",
+            "live_demo": "https://api-docs.example.com",
+            "tech_stack": ["Node.js", "Express", "MongoDB", "JWT"],
+            "readme": "# Blog CMS API\n\nA secure RESTful API that provides endpoints for creating, reading, updating, and deleting blog posts, with user authentication and authorization.",
+            "enabled": false
+        },
+        {
+            "id": "be-2",
+            "name": "Python FastAPI Backend",
+            "description": "High-performance API built with FastAPI for data processing and analytics",
+            "image": "/imgs/home.jpg",
+            "live_demo": "https://fastapi-demo.example.com/docs",
+            "tech_stack": ["Python", "FastAPI", "SQLAlchemy", "Pydantic"],
+            "readme": "# Analytics API\n\nA modern, fast API built with FastAPI framework, providing endpoints for data processing, analytics, and reporting with automatic Swagger documentation.",
+            "enabled": false
+        },
+        {
+            "id": "be-3",
+            "name": "Microservices Architecture",
+            "description": "Network of microservices for e-commerce platform with API gateway",
+            "image": "/imgs/home.jpg",
+            "live_demo": "https://microservices-demo.example.com",
+            "tech_stack": ["Spring Boot", "Docker", "Kubernetes", "RabbitMQ"],
+            "readme": "# E-commerce Microservices\n\nA collection of interconnected services handling orders, payments, inventory, and user accounts, with service discovery and load balancing.",
+            "enabled": false
+        },
+        {
+            "id": "be-4",
+            "name": "GraphQL Server",
+            "description": "GraphQL server providing flexible data querying for a music streaming service",
+            "image": "/imgs/home.jpg",
+            "live_demo": "https://graphql-music.example.com/playground",
+            "tech_stack": ["Node.js", "Apollo Server", "PostgreSQL", "DataLoader"],
+            "readme": "# Music Streaming GraphQL API\n\nA GraphQL server that allows complex queries for artists, albums, tracks, and playlists with efficient data fetching patterns.",
+            "enabled": false
+        },
+        {
+            "id": "be-5",
+            "name": "Real-time Notification Service",
+            "description": "WebSocket-based service for delivering real-time notifications and updates",
+            "image": "/imgs/home.jpg",
+            "live_demo": "https://notifications-demo.example.com",
+            "tech_stack": ["Go", "WebSockets", "Redis", "gRPC"],
+            "readme": "# Real-time Notification Service\n\nA high-performance service built with Go that handles thousands of concurrent WebSocket connections for delivering instant notifications.",
+            "enabled": false
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+.tooltipContainer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .tooltip {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition-time, 0.3s) ease, 
+                transform var(--transition-time, 0.3s) ease;
+    max-width: var(--max-width, 300px);
+    
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    // Top position
+    &[data-position="top"] {
+      bottom: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%) translateY(5px);
+      
+      .tooltipArrow {
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+      }
+      
+      &.visible {
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+    
+    // Bottom position
+    &[data-position="bottom"] {
+      top: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%) translateY(-5px);
+      
+      .tooltipArrow {
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+      }
+      
+      &.visible {
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+    
+    // Left position
+    &[data-position="left"] {
+      // width: 250px;
+      right: calc(100% + 10px);
+      top: 50%;
+      transform: translateY(-50%) translateX(5px);
+  
+
+      .tooltipText {
+        width: 200px;
+        float: right; // This pulls the content to the right edge
+      }
+      
+      .tooltipArrow {
+        right: -5px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+      
+      &.visible {
+        transform: translateY(-50%) translateX(0);
+      }
+    }
+    
+    // Right position
+    &[data-position="right"] {
+      left: calc(100% + 10px);
+      top: 50%;
+      transform: translateY(-50%) translateX(-5px);
+      
+      .tooltipArrow {
+        left: -5px;
+        top: 50%;
+        transform: translateY(-50%) rotate(45deg);
+      }
+      
+      &.visible {
+        transform: translateY(-50%) translateX(0);
+      }
+    }
+  }
+  
+  .tooltipText {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  .tooltipArrow {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
