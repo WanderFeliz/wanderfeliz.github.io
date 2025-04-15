@@ -28,6 +28,8 @@
 
 .img{
   width: 100%;
+  border-radius: 50%;
+
   height: 600px;
   object-fit: contain;
   animation: move 3s infinite ease alternate;

@@ -78,8 +78,6 @@ const Tooltip: React.FC<TooltipProps> = ({
     // Get existing props from the child
     const existingProps: existingPropsType = child.props || {};
 
-    const childClassName = existingProps.className;
-
 
     // Create new event handlers that combine existing ones with ours
     const onMouseEnter = (e: React.MouseEvent) => {

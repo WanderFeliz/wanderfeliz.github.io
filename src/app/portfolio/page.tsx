@@ -18,7 +18,7 @@ const Portfolio = () => {
       // Replace with your actual API endpoint
       // const response = await fetch("https://api.example.com/projects");
       // const data = await response.json();
-      setLoading(_prev => true);
+      setLoading(true);
       const frontendProjects = projectsJson.frontend.filter((p: Models.Server.IProject) => p.enabled);
       const backendProjects = projectsJson.backend.filter((p: Models.Server.IProject) => p.enabled);
 
@@ -37,7 +37,7 @@ const Portfolio = () => {
     } catch (error) {
       console.error("Error fetching projects:", error);
     } finally {
-      setLoading(_prev => false);
+      setLoading(false);
     }
   };
 
@@ -64,7 +64,7 @@ const Portfolio = () => {
       </main>
       <section className={styles.contactSection}>
         <h2 className={styles.title}>Impressed by what you see? <Button url="/contact" text="Let's connect" variant="primary" className={styles.contactButton} /></h2>
-        <p className={styles.contactText}>I'd love to discuss how my skills can benefit your team!</p>
+        <p className={styles.contactText}>I&apos;d love to discuss how my skills can benefit your team!</p>
       </section>
     </>
   );

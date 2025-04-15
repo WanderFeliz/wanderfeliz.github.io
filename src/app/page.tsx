@@ -11,7 +11,7 @@ export default function Home() {
         </h1>
         <p className={styles.desc}>
           I build robust backends and intuitive frontends that solve real business problems. 
-          I'll interpret your vision into code, and together we'll build something remarkable.
+          I&apos;ll interpret your vision into code, and together we&apos;ll build something remarkable.
         </p>
         <Button url="/about" text="See more" variant="primary" />
       </div>
